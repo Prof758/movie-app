@@ -14,8 +14,3 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
-.rating {
-  display: flex;
-  gap: 10px;
-}

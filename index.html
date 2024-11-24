@@ -15,22 +15,26 @@
     <title>Movie App</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="search-container">
-        <input type="text" class="search-bar" placeholder="Search..." />
-        <button class="search-button">Search</button>
+    <form id="form">
+      <input type="text" id="search" class="search" placeholder="Search..." />
+      <button class="search-button">Search</button>
+    </form>
+    <main id="main">
+      <div class="movie">
+        <img
+          src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2659&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="movie poster img"
+        />
+        <h3>Movie Title</h3>
+        <span class="green">9.0</span>
       </div>
-    </nav>
-    <div class="container">
-      <div class="title">
-        <h1>Simon S. Prophet</h1>
-        <h2>Freelance Web Dev</h2>
-        <div class="contact">
-          <i class="fa-solid fa-envelope"></i>
-          <p>Prohets827@gmail.com</p>
-        </div>
+      <div class="overview">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        consequatur iusto nulla fugit delectus. Quia ex beatae recusandae eius
+        repellat blanditiis illum iure eligendi! Minus, dolores. Totam impedit
+        pariatur consectetur!
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
