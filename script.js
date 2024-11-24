@@ -20,7 +20,7 @@ async function getMovies(url) {
   const res = await fetch(url);
   const data = await res.json();
 
-  //console.log(data.results);
+  console.log(data.results);
   showMovies(data.results);
 }
 
@@ -64,8 +64,16 @@ function getClassByRate(vote) {
   }
 }
 
-form.addEventListener('click', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (e) => {
+  listenerAction(e);
+});
+
+button.addEventListener('click', (e) => {
+  listenerAction(e);
+});
+
+function listenerAction(e) {
+  e.preventDefault(e);
   const searchTerm = search.value;
 
   if (searchTerm && searchTerm !== '') {
@@ -75,8 +83,4 @@ form.addEventListener('click', (e) => {
   } else {
     window.location.reload();
   }
-});
-
-button.addEventListener('submit', (e) => {
-  form.dispatchEvent(new Event('submit'));
-});
+}
